@@ -1,20 +1,65 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  animation: bgchange 20s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+}
+
 Main {
   text-align: center;
 }
+h1{
+  font-size: 50px;
+  margin-bottom: 50px;
+}
 input {
   font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
 }
 button {
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 20px;
+  transition: 0.2s;
+  font-family: 'Courier New', Courier, monospace;
 }
-.wrap {
+button:hover{
+  font-size: 25px;
+
+}
+.task_list {
   display: flex;
   justify-content: space-evenly;
   margin-top: 50px;
+  font-size: 30px;
 }
 
-.wrap ul {
-  background-color: aquamarine;
-  padding: 200px 150px;
+.task_list ul {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 0;
+  background-color:white;
+  border:solid 0.5px black;
+  padding: 60px 100px; 
+  margin: 0;
 }
+.task_list li{
+  font-size: 20px;
+} 
+.task_list button{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  margin-left: 5px;
+  border-radius: 10%;
+  border-color:black;
+}
+/*========= body背景色の変化CSS ===============*/
+
+@keyframes bgchange{
+      0%   {background:#ffe6e1;}/*変化させたい色*/
+      25%  {background:#fdcb9e;}/*変化させたい色*/
+      50%  {background:#fdcbc1;}/*変化させたい色*/
+      75%  {background:#ffff8c;}/*変化させたい色*/
+      90%  {background:#b2dffb;}/*変化させたい色*/
+      100% {background:#ffe6e1;}/*変化させたい色*/
+}
+
+/* Resources */

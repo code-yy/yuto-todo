@@ -4,36 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="FontStyle.css"
+      href="https://fonts.googleapis.com/css?family=Amatic+SC:700"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
+
     <title>yuto_todo</title>
   </head>
+
   <body>
     <main>
-      <h1>yuto_todo</h1>
+      <header>
+        <h1>yuto_todo</h1>
+      </header>
 
       <form id="form">
-        <label for="title">Task</label>
         <input placeholder="タスクを追加..." type="text" id="task" />
       </form>
 
       <br />
-      <button type="text" id="ok" onclick="clickEvent()">Today</button>
-      <button type="text" id="ok" onclick="clickEvent()">Tomorrow</button>
-      <button type="text" id="ok" onclick="clickEvent()">Sometimes</button>
+      <button type="text" id="Today">Today</button>
+      <button type="text" id="Tomorrow">Tomorrow</button>
+      <button type="text" id="Sometimes">Sometimes</button>
 
-      <div class="wrap">
-        <div class="wrap_1">
+      <div class="task_list">
+        <div class="task_list1">
           Today
-          <ul></ul>
+          <ul id="list1"></ul>
         </div>
-        <div class="wrap_2">
+        <div class="task_list2">
           Tomorrow
-          <ul></ul>
+          <ul id="list2"></ul>
         </div>
-        <div class="wrap_3">
+        <div class="task_list3">
           Sometimes
-          <ul></ul>
+          <ul id="list3"></ul>
         </div>
       </div>
     </main>
